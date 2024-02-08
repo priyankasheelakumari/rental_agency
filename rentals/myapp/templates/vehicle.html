@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center><h2>Vehicle Details</h2></center>
+    <form method="POST" action="">
+        {% csrf_token %}
+
+        <!-- <label for="agencyname"> Travel Agency Name:</label>
+        <input type="text" id="agencyName" name="agencyname" required><br><br> -->
+        <label for="rcno">Registration Number:</label>
+        <input type="number" id="rcno" name="rcNo" required><br><br>
+        <label for="vehicleno">Vehicle Number:</label>
+        <input type="text" id="vehicleno" name="vehNo" required><br><br>
+        <label for="typeofvehicle">Type of vehicle:</label><br><br>
+
+        <select name="type" id="type">
+          <option value="two-wheeler">Two Wheeler</option>
+          <option value="four-wheeler">Four Wheeler</option>
+          <option value="heavy-vehicle">Heavy Vehicle</option>
+        </select><br><br>
+        
+        <label for="listofvehicle">List of vehicle:</label><br><br>
+
+        <select name="lisT" id="list">
+          <option value="Avenger220">Avenger 220</option>
+          <option value="Pulsor">Pulsor</option>
+          <option value="Activa">Activa</option>
+          <option value="M80">M80</option>
+          <option value="Scootypep">Scootypep</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Honda">Honda</option>
+          <option value="Ford">Ford</option>
+          <option value="Innova">Innova</option>
+          <option value="Ambasodar">Ambassodor</option>
+          <option value="Maruthi">Maruthi</option>
+          <option value="Benz">Benz</option>
+          <option value="Hundai">Hundai</option>
+          <option value="Full-size-Pickup">Full-size pickup</option>
+          <option value="Mini-size-Pickup">Mini-size pickup</option>
+          <option value="Delivery-van">Delivery van</option>
+          <option value="Mini-Bus">Mini bus</option>
+        </select><br><br>
+        
+
+        <label for="seats">No:of seats:</label>
+        <input type="number" id="seat" name="no-of-seat" required><br><br>
+        
+       
+        <input type="submit" value="Register">
+        <button class="btn-warning"><a href='card'>Back</a></button>
+
+    </form>
+</body>
+</html>
+
+</body>
+</html>

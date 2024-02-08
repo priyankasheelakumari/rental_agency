@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form-travels</title>
+</head>
+<body>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form method="POST" action="">
+        {% csrf_token %}
+       
+        <label for="username"> Username:</label>
+        <input type="text" id="username" name="userName" required><br><br>
+        <h6>{{key1}}</h6>
+        
+        <label for="username"> AgencyNO:</label>
+        <input type="number" id="agencyno" name="agencyno" required><br><br>
+
+
+        <label for="fullame">Full name(owner name):</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="agency name">Agency name:</label>
+        <input type="text" id="agencyname" name="agencyName" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <h6>{{key2}}</h6>
+
+        <label for="place">Place</label>
+        <input type="text" id="place" name="place" required><br><br>
+        <label for="licno">Licence Number</label>
+        <input type="number" id="licno" name="licno"><br><br>
+        
+        <label for="mobno">Mobile Number</label>
+        <input type="number" id="mobno" name="mobno"><br><br>
+        
+
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="passWord" required><br><br>
+        <h6>{{key3}}</h6>
+        
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="cpassWord" required><br><br>
+        
+        <input type="submit" value="Register">
+        
+        <label for="olduser">Already a member</label>
+        <button><a href="travelagencylogin">Login</a></button>
+    </form>
+</body>
+</html>
+
+
+
